@@ -1,17 +1,33 @@
   <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>
+      <b-nav small>
+        <router-link to="/">Home</router-link>
+        <router-link to="/form">Form</router-link>
+        <router-link to="/form_2">Form_2</router-link>
+
+      </b-nav>
+    </div>
+    <!-- routes will be rendered here -->
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/Home.vue'
+import Form from './components/Form.vue'
+import Form_2 from './components/Form_2.vue'
+
+
+
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Home,
+    Form,
+    Form_2
   }
 }
 </script>
@@ -24,5 +40,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+a {
+  margin: 0 10px;
 }
 </style>
