@@ -7,9 +7,14 @@
         </ion-toolbar>
       </ion-header>
       <ion-content>
-        singolo todo
-        {{todoid}}
-        {{todos.title}}
+        
+        <div>singolo todo</div>
+       
+        <div>{{todoid}}</div>
+        
+        <div>{{todos.title}}</div>
+
+        
         <ion-fab vertical="bottom" horizontal="end" slot="fixed">
           <router-link to="/Ionic_1">
             <ion-fab-button>
@@ -23,6 +28,7 @@
 </template>
 
 <script>
+/* eslint-disable */
   export default {
     name: 'singlepost',
     props: ['contenuto'],

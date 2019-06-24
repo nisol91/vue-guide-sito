@@ -36,7 +36,7 @@
 
 			<b-button type="submit" variant="primary" :disabled="$v.form.$invalid">Submit</b-button>
 		</b-form>
-    <!-- <singlepost contenuto="post singolo"></singlepost> -->
+    <singlepost contenuto="post singolo"></singlepost>
 
 	</div>
 </template>
