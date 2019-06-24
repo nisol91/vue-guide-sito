@@ -36,10 +36,13 @@
 
 			<b-button type="submit" variant="primary" :disabled="$v.form.$invalid">Submit</b-button>
 		</b-form>
+    <!-- <singlepost contenuto="post singolo"></singlepost> -->
+
 	</div>
 </template>
 
 <script>
+import singlepost from './singlepost.vue'
 	import {
 		validationMixin
 	} from 'vuelidate'
@@ -50,6 +53,9 @@
 	} from 'vuelidate/lib/validators'
 
 	export default {
+		components: {
+			singlepost,
+		},
 		mixins: [validationMixin],
 		data() {
 			return {
@@ -70,8 +76,8 @@
 					minLength: minLength(5),
 				},
 				mail: {
-					required,
-					email,
+					required: {email},
+					// email,
 				}
 			}
 		},

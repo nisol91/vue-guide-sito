@@ -5,8 +5,8 @@
     <h1 v-bind:title="message">Hover on me</h1>
     <h1 v-if="visto">You see me</h1>
     <p v-bind:key="el.text" v-for="el in todos">{{el.text}}</p>
-    <h1 v-on:click="inverti">Cliccami per invertire {{mex}}</h1>
-    <input type="text" v-model="mex">
+    <div class="btn btn-danger" v-on:click="inverti">Cliccami per invertire {{mex}}</div>
+    <div><input type="text" v-model="mex"></div>
     <p>{{foo}}</p>
     <button v-on:click="foo = 'foooz'" class="btn btn-success">cliccami</button>
     <div v-bind:class="{active: isActive}" >Sono attivo?</div>
