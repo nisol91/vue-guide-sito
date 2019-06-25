@@ -1,19 +1,22 @@
 <template>
   <div>
-    Home
+    elemento singolo
+    <div>{{idElemento}}</div>
+    <div>{{titoloElemento}}</div>
   </div>
 </template>
 
 <script>
 /* eslint-disable */
 export default {
-  name: 'Home',
+  name: 'ElementoSingolo',
   props: {
    
   },
   data() {
     return {
-   
+      idElemento: this.$route.params.elementoId,
+      titoloElemento: this.$route.params.elementoTitolo,
     }
   },
   created: function () {

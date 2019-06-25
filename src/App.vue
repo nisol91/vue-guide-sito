@@ -2,11 +2,10 @@
   <div id="app">
     <div>
       <b-nav small>
-
         <router-link to="/">Home</router-link>
-        <router-link to="/form">Form</router-link>
-        <router-link to="/form_2">Form_2</router-link>
-        <router-link to="/ionic_1">Ionic_1</router-link>
+        <router-link to="/pagina">Pagina</router-link>
+        <router-link to="/elenco">Elenco</router-link>
+
       </b-nav>
     </div>
     <main class="App__main">
@@ -23,12 +22,11 @@
 </template>
 
 <script>
+/* eslint-disable vue/no-unused-components */
 import Home from './components/Home.vue'
-import Form from './components/Form.vue'
-import Form_2 from './components/Form_2.vue'
-import Ionic_1 from './components/Ionic_1.vue'
-import singlepost from './components/singlepost.vue'
-
+import Pagina from './components/Pagina.vue'
+import Elenco from './components/Elenco.vue'
+import ElementoSingolo from './components/ElementoSingolo.vue'
 
 
 
@@ -38,10 +36,9 @@ export default {
   name: 'app',
   components: {
     Home,
-    Form,
-    Form_2,
-    Ionic_1,
-    singlepost,
+    Pagina,
+    Elenco,
+    ElementoSingolo,
   }
 }
 </script>

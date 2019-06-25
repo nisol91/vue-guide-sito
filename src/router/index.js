@@ -1,12 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Form from '@/components/Form'
-import Form_2 from '@/components/Form_2'
-import Ionic_1 from '@/components/Ionic_1'
-import singlepost from '@/components/singlepost'
-
-
+import Pagina from '@/components/Pagina'
+import Elenco from '@/components/Elenco'
+import ElementoSingolo from '@/components/ElementoSingolo'
 
 
 
@@ -22,26 +19,21 @@ let router = new Router({
 			component: Home
 		},
 		{
-			path: '/form',
-			name: 'Form',
-			component: Form
+			path: '/pagina',
+			name: 'Pagina',
+			component: Pagina
 		},
 		{
-			path: '/form_2',
-			name: 'Form_2',
-			component: Form_2
+			path: '/elenco',
+			name: 'Elenco',
+			component: Elenco
 		},
 		{
-			path: '/ionic_1',
-			name: 'Ionic_1',
-			component: Ionic_1
-		},
-		{
-			path: '/todo/:todoid',
-			name: 'singlepost',
-			component: singlepost,
+			path: '/elementosingolo/:elementoId',
+			name: 'ElementoSingolo',
+			component: ElementoSingolo,
 			props: true,
-		}
+		},
 	]
 })
 

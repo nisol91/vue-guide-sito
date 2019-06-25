@@ -1,13 +1,13 @@
 <template>
   <div>
-    Home
+    Pagina
   </div>
 </template>
 
 <script>
 /* eslint-disable */
 export default {
-  name: 'Home',
+  name: 'Pagina',
   props: {
    
   },
